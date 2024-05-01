@@ -10,7 +10,29 @@
     --add-button: #ee9ca7;
     --add-button-shadow: rgba(238, 156, 167, 0.4);
 }
-
+canvas {
+    z-index: 10;
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+.neon {
+    // font-size: 72px;
+    color: #fff;
+    text-align: right;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    text-shadow:
+        0 0 10px #fff,
+        0 0 20px #fff;
+    // 0 0 30px #fff,
+    // 0 0 40px #fff,
+    // 0 0 50px #fff;
+    // 0 0 60px #fff,
+    // 0 0 70px #fff,
+    // 0 0 80px #fff;
+}
 body {
     width: 100%;
     height: 100vh;
@@ -38,6 +60,7 @@ ul {
 }
 
 .app-container {
+    z-index: 20;
     border-radius: 8px;
     width: 100%;
     max-width: 480px;

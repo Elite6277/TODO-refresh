@@ -1,55 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Приложение To-Do List</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="css/todo.css" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
-      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Bad+Script"
-    />
-    <link rel="shortcut icon" href="assets/favicon.ico" />
-    <link rel="icon" type="image/gif" href="assets/animated_favicon.gif" />
-    <link rel="stylesheet" href="./css/style.min.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TO DO LIST</title>
+    <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body>
-    <!-- <div class="main__wrapper"> -->
-    <div class="todo">
-      <div class="todo__wrapper">
-        <h1 class="todo__header">
-          Etmeli isler
-          <i id="pensil" class="fas fa-pencil-alt"></i>
-        </h1>
+    <div class="app-container">
+      <h1 class="app-header">TO DO LIST</h1>
+      <div class="add-task">
         <input
-          id="input"
-          class="todo__input"
           type="text"
-          placeholder="Taze etmeli isler"
+          autocomplete="off"
+          placeholder="Etmeli isini yaz"
+          id="newTask"
+          class="task-input"
         />
-        <div></div>
-        <ul class="todo__list">
-          <li class="todo__lists">
-            <span class="todo__trash"><i class="fas fa-trash-alt"></i></span>JS
-            owrenmeli
-          </li>
-          <li class="todo__lists">
-            <span class="todo__trash"><i class="fas fa-trash-alt"></i></span>To
-            do app etmeli
-          </li>
-        </ul>
-        <div class="todo__commands">
-          <a id="save" class="todo__command" href="#">Save</a>
-          <a id="clear" class="todo__command" href="#">Clear</a>
-          <a id="tips" class="todo__command" href="#">Tips</a>
-        </div>
+        <input
+          type="submit"
+          value=""
+          class="submit-task"
+          id="addTask"
+          title="Add Task"
+        />
       </div>
+      <ul class="task-list" id="taskListItems"></ul>
     </div>
-    <script src="./js/main.js"></script>
   </body>
+  <script src="./js/main.js"></script>
 </html>
